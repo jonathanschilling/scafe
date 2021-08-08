@@ -1,5 +1,5 @@
-#ifndef SCAFE_ARRAYS_H
-#define SCAFE_ARRAYS_H
+#ifndef SCAFE_CONFIGURED_H
+#define SCAFE_CONFIGURED_H
 
 // for printf, stderr
 #include <stdio.h>
@@ -9,6 +9,7 @@
 #include "scafe/scafe_array_basics.h"
 
 // configure SCAFE array access
+// can be SCAFE_ROW_MAJOR or SCAFE_COL_MAJOR
 #define SCAFE_ORDER SCAFE_ROW_MAJOR
 
 // primitive error handling: print to stderr
@@ -19,4 +20,4 @@ void scafe_error(const char* what) {
 // include main SCAFE array access library
 #include "scafe/scafe_array_access.h"
 
-#endif // SCAFE_ARRAYS_H
+#endif // SCAFE_CONFIGURED_H
