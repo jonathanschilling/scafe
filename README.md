@@ -79,7 +79,8 @@ void scafe_error(const char* what) {
 
 You can download this template file here: [`scafe_configured.h`](https://raw.githubusercontent.com/jonathanschilling/scafe/master/scafe_configured.h).
 This *configured* file can then be used in your own project.
-`scafe` is then activated in the build by defining the preprocessor macro `SCAFE_ACTIVE
+`scafe` is then activated in the build by defining the preprocessor macro `SCAFE_ACTIVE`
+either via a `#define` in the source code or via a compiler/preprocessor flag.
 
 A demo project is available in [`scafe_demo.c`](scafe_demo.c).
 
